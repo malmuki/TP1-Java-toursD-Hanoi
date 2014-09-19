@@ -38,6 +38,7 @@
 		<VBox fx:id="tour1vBox" alignment="CENTER_LEFT"/>
 		<VBox fx:id="tour2vBox" alignment="CENTER"/>
 		<VBox fx:id="tour3vBox" alignment="CENTER_RIGHT"/>
+		
 	</center>
 
 

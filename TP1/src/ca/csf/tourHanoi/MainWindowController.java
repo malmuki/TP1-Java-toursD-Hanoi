@@ -18,7 +18,7 @@ public class MainWindowController {
 	@FXML VBox tour1vBox;
 	@FXML VBox tour2vBox;
 	@FXML VBox tour3vBox;
-
+    
 	@FXML public void nouvelle_Partie() {
 		int nbDisk = Integer.parseInt((String) diskDepart.getValue());
 		
