@@ -50,9 +50,13 @@ public class MainWindowController {
 	@FXML
 	public void deplacementDisk() {
 		// condition de victoire;
+		
+		estVictorieux();
+	}
+	
+	public void estVictorieux(){
 		if (towers[2].getSize() == nbDisk) {
 
 		}
-
 	}
 }
