@@ -13,18 +13,15 @@
 	fx:controller="ca.csf.tourHanoi.MainWindowController">
 
 	<top>
-		<Button fx:id="Tour1" alignment="CENTER_LEFT"
-		onAction="#deplacementDisk" text="selection"/>
-		<Button fx:id="Tour2" alignment="CENTER"
-		onAction="#deplacementDisk" text="selection"/>
-		<Button fx:id="Tour3" alignment="CENTER_RIGHT"
-		onAction="#deplacementDisk" text="selection"/>
+		<Button fx:id="Tour1" onAction="#deplacementDisk" text="selection" />
+		<Button fx:id="Tour2" onAction="#deplacementDisk" text="selection" />
+		<Button fx:id="Tour3" onAction="#deplacementDisk" text="selection" />
 	</top>
 
 	<center>
-		<VBox fx:id="tour1vBox" alignment="CENTER_LEFT" />
-		<VBox fx:id="tour2vBox" alignment="CENTER" />
-		<VBox fx:id="tour3vBox" alignment="CENTER_RIGHT" />
+		<VBox fx:id="tour1vBox" />
+		<VBox fx:id="tour2vBox" />
+		<VBox fx:id="tour3vBox" />
 	</center>
 
 	<bottom>
