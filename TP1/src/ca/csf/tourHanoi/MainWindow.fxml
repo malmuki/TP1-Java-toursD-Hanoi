@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ca.csf.tourHanoi.MainWindowController">
+
+	<bottom>
+		<HBox>
+			<Button fx:id="nouvellePartie" text="Nouvelle Partie"
+				onAction="#nouvelle_Partie" alignment="BOTTOM_CENTER" />
+
+			<Label text="Nombre de disk:" />
+
+			<ChoiceBox fx:id="diskDepart">
+				<items>
+					<FXCollections fx:factory="observableArrayList">
+						<String fx:value="3" />
+						<String fx:value="4" />
+						<String fx:value="5" />
+						<String fx:value="6" />
+					</FXCollections>
+				</items>
+				<value>
+					<String fx:value="3" />
+				</value>
+			</ChoiceBox>
+		</HBox>
+	</bottom>
+
+	<center>
+		<VBox fx:id="tour1vBox" alignment="CENTER_LEFT"/>
+		<VBox fx:id="tour2vBox" alignment="CENTER"/>
+		<VBox fx:id="tour3vBox" alignment="CENTER_RIGHT"/>
+	</center>
+
+
+</BorderPane>
