@@ -7,9 +7,25 @@
 <?import javafx.collections.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="ca.csf.tourHanoi.MainWindowController">
+
+	<top>
+		<Button fx:id="Tour1" alignment="CENTER_LEFT"
+		onAction="#deplacementDisk" text="selection"/>
+		<Button fx:id="Tour2" alignment="CENTER"
+		onAction="#deplacementDisk" text="selection"/>
+		<Button fx:id="Tour3" alignment="CENTER_RIGHT"
+		onAction="#deplacementDisk" text="selection"/>
+	</top>
+
+	<center>
+		<VBox fx:id="tour1vBox" alignment="CENTER_LEFT" />
+		<VBox fx:id="tour2vBox" alignment="CENTER" />
+		<VBox fx:id="tour3vBox" alignment="CENTER_RIGHT" />
+	</center>
 
 	<bottom>
 		<HBox>
@@ -33,13 +49,6 @@
 			</ChoiceBox>
 		</HBox>
 	</bottom>
-
-	<center>
-		<VBox fx:id="tour1vBox" alignment="CENTER_LEFT"/>
-		<VBox fx:id="tour2vBox" alignment="CENTER"/>
-		<VBox fx:id="tour3vBox" alignment="CENTER_RIGHT"/>
-		
-	</center>
 
 
 </BorderPane>

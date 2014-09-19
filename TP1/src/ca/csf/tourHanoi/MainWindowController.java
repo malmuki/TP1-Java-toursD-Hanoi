@@ -10,7 +10,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.VBox;
 
 public class MainWindowController {
-		
+	
 	private Tower[] towers = {new Tower(new LinkedListStack()), new Tower(new LinkedListStack()), new Tower(new LinkedListStack())};
 	@FXML Rectangle base;
 	@FXML Button nouvellePartie;
@@ -31,7 +31,7 @@ public class MainWindowController {
 		}
 	}
 	
-	@FXML public void allo() {
+	@FXML public void deplacementDisk() {
 		
 	}
 }

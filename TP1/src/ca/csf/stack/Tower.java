@@ -13,9 +13,14 @@ public class Tower {
 		return stack.getSize();
 	}
 
-	public void addDisk(Disk disk) {
-		if (this.stack.peek() == null || ((Disk) this.stack.peek()).getLongueur() > disk.getLongueur()) {
+	public boolean addDisk(Disk disk) {
+		if (this.stack.peek() == null
+				|| ((Disk) this.stack.peek()).getLongueur() > disk
+						.getLongueur()) {
 			stack.push(disk);
+			return true;
+		} else {
+			return false;
 		}
 
 	}
@@ -39,8 +44,8 @@ public class Tower {
 		stack.clear();
 
 	}
-	
-	public int getPosition(){
+
+	public int getPosition() {
 		return position;
 	}
 
