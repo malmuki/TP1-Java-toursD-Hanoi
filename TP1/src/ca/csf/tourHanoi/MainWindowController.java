@@ -56,7 +56,7 @@ public class MainWindowController {
 	
 	public void estVictorieux(){
 		if (towers[2].getSize() == nbDisk) {
-
+			
 		}
 	}
 }
