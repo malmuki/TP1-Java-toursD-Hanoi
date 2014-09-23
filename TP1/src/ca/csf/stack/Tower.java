@@ -25,9 +25,9 @@ public class Tower {
 
 	}
 
-	public Object getDiskOnTop() {
+	public Disk getDiskOnTop() {
 
-		return stack.peek();
+		return (Disk)stack.peek();
 	}
 
 	public Disk removeDisk() {
