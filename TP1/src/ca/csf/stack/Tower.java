@@ -2,7 +2,6 @@ package ca.csf.stack;
 
 public class Tower {
 
-	private int position;
 	private Stack stack;
 
 	public Tower(Stack stack) {
@@ -43,10 +42,6 @@ public class Tower {
 	public void clear() {
 		stack.clear();
 
-	}
-
-	public int getPosition() {
-		return position;
 	}
 
 }

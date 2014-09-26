@@ -19,7 +19,8 @@ public class LinkedListStack implements Stack{
 	}
 
 	public void push(Object object) {
-		lastStackNode = new LinkedListStackNode(object,lastStackNode);
+		LinkedListStackNode buffer = lastStackNode;
+		lastStackNode = new LinkedListStackNode(object,buffer);
 		size++;
 	}
 

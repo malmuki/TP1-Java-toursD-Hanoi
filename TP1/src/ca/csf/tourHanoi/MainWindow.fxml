@@ -9,11 +9,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+<BorderPane fx:id="parent" xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="ca.csf.tourHanoi.MainWindowController">
 
 	<top>
-		<HBox>
+		<HBox alignment="CENTER">
 			<Button fx:id="Tour1" onAction="#button0Click" text="selection" />
 			<Button fx:id="Tour2" onAction="#button1Click" text="selection" />
 			<Button fx:id="Tour3" onAction="#button2Click" text="selection" />
@@ -21,10 +21,13 @@
 	</top>
 
 	<center>
-		<HBox fx:id="baseTour">
-			<VBox fx:id="tour1vBox" />
-			<VBox fx:id="tour2vBox" />
-			<VBox fx:id="tour3vBox" />
+		<HBox fx:id="baseTour" alignment="BOTTOM_CENTER">
+			<VBox fx:id="tour1vBox" centerShape="true" minWidth="80"
+				alignment="BOTTOM_CENTER" />
+			<VBox fx:id="tour2vBox" centerShape="true" minWidth="80"
+				alignment="BOTTOM_CENTER" />
+			<VBox fx:id="tour3vBox" centerShape="true" minWidth="80"
+				alignment="BOTTOM_CENTER" />
 		</HBox>
 	</center>
 
